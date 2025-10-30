@@ -1,0 +1,41 @@
+services:
+  web:
+    build:
+      context: ./docker/web
+      dockerfile: Dockerfile
+    container_name: itap3012-web
+    volumes:
+      - ./project2/public:/var/www/html
+      - ./docker/web/apache/sites-enabled:/etc/apache2/sites-enabled
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    environment:
+      APACHE_DOCUMENT_ROOT: /var/www/html
+      PHP_MEMORY_LIMIT: 512M
+
+  db:
+    image: mariadb:11
+    container_name: itap3012-db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+    volumes:
+      - dbdata:/var/lib/mysql
+      - ./docker/db/init:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: itap3012-phpmyadmin
+    environment:
+      PMA_HOST: db
+      UPLOAD_LIMIT: 64M
+    ports:
+      - "8081:80"
+    depends_on:
+      - db
+
+volumes:
+  dbdata:

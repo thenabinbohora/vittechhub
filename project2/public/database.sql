@@ -53,8 +53,8 @@ CREATE TABLE order_items (
 );
 
 INSERT INTO users (full_name, email, password_hash, role) VALUES
-('Admin User', 'admin@vithub.com.au', '$2y$10$E1jrmQeR9rRXV5nT4mE1qOT4oe4lDCt0YF1qV3oF0v9pG3mGJv2N2', 'admin');
--- Password = Admin@123
+('Admin User', 'admin@vithub.com.au', '$2a$12$vwrnWBPi78phRkcZ8oRvH.UkYP9GX2.j4T7EmF4Azlq0UlR61l/TO', 'admin');
+-- Password = admin123
 
 INSERT INTO categories (category_name, description) VALUES 
 ('laptops','All laptops'),('phones','Smartphones'),('accessories','Peripherals');

@@ -119,6 +119,11 @@ $cats = $pdo->query("SELECT category_name FROM categories ORDER BY category_name
       </form>
 
       <!-- Product grid -->
+      <!--
+        ATTRIBUTION:
+        Some images like JBL Party Box, Google Watch 4, and Marshall Speaker are taken from JBHiFi online store page for academic purposes only
+        Author: https://www.jbhifi.com.au
+      -->
       <div class="product-grid">
         <?php foreach ($products as $p): ?>
           <article class="product-card">

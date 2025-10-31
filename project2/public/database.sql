@@ -65,4 +65,8 @@ INSERT INTO products (category_id, name, description, image, cost, quantity, spe
 (2,'iPhone 15 Pro','Advanced camera','https://i.pinimg.com/736x/cb/2a/d0/cb2ad0bbc24149758f88797d22b54ab7.jpg',999.99,20,'Pro camera'),
 (2,'Samsung Galaxy S24','Android AI','https://i.pinimg.com/736x/50/a1/af/50a1af3159848f63ccfd1056f0d2616b.jpg',899.99,15,'AI'),
 (3,'Wireless Headphones','ANC','https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=400&fit=crop&q=80',299.99,30,'Noise cancelling'),
-(3,'Apple Watch Series 9','Health','https://i.pinimg.com/originals/23/aa/02/23aa0275ccd57d2db562a0db72a686a4.jpg',399.99,25,'ECG');
+(3,'Apple Watch Series 9','Health','https://i.pinimg.com/originals/23/aa/02/23aa0275ccd57d2db562a0db72a686a4.jpg',399.99,25,'ECG'),
+(3,'JBL Party Speaker','High Bass','https://www.jbhifi.com.au/cdn/shop/files/751938-Product-0-I-638526337808117426.jpg?v=1717037051',499.99,1000,'High Bass'),
+(3,'Google Pixel Watch 4','Fitness and Well-being','https://www.jbhifi.com.au/cdn/shop/files/829982-Product-0-I-638907292204044611_1be40b9a-aef3-4104-9fab-ff4905d483d1.jpg?v=1755229932',699.99,1000,'Fitness and Well-being'),
+(3,'Marshall Speaker','High Volume','https://www.jbhifi.com.au/cdn/shop/files/840247-Product-0-I-638925558008700069.jpg',359.99,1000,'High Volume');
+

@@ -103,7 +103,7 @@ include __DIR__ . '/../includes/admin_header.php';
     <div class="form-item">
       <label>Price</label>
       <input class="input-box" type="number" step="0.01" name="cost"
-             value="<?= h($product['cost'] ?? '') ?>" required>
+             value="<?= h($product['cost'] ?? '') ?>" min="0" required>
     </div>
 
     <!-- Stock Quantity -->
